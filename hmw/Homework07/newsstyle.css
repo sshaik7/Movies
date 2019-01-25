@@ -1,0 +1,9 @@
+﻿.row {
+    width: 175px;
+   
+   
+    
+}
+.custom-class {
+   d-flex flex-column mx-5 justify-content-start
+}
