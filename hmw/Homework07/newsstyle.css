@@ -1,9 +1,37 @@
-﻿.row {
-    width: 175px;
-   
-   
-    
+﻿body {
 }
-.custom-class {
-   d-flex flex-column mx-5 justify-content-start
+
+.wrapping {
+    float: left;
+    border-width: 2px;
+    /*border-style: dashed;*/
+}
+
+#boxer {
+    /* basic */
+    background-color: #fff;
+    margin: 10px;
+    padding: 0px;
+    width: min-content;
+    text-align: left; /* border-radius */
+}
+
+.section_title {
+    text-transform: uppercase;
+    color: red;
+    font-family: Open Sans;
+}
+
+.doubleUnderline {
+    text-decoration: underline;
+    border-bottom: 1px solid #000;
+}
+
+#reduce {
+    margin: 0.1em 0; /* FF for instance */
+    line-height: 5em; /* chrome for instance */
+}
+.section_text {
+    font-family: Arial;
+    font-weight:bold;
 }

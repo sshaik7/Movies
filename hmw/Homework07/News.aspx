@@ -19,41 +19,45 @@
     <div class="container">
    
    
-   
-        <asp:DataList ID="DataList1"  runat="server"  CellSpacing="10" DataSourceID="SqlDataSource1"   RepeatColumns="6" RepeatDirection="Horizontal">
+   <asp:DataList ID="DataList1" runat="server" BorderColor="Black"
+           CellPadding="5"
+           CellSpacing="5" RepeatColumns="6" RepeatDirection="Horizontal" DataSourceID="SqlDataSource1" Width="1327px" Height="333px" >
+           <HeaderStyle BackColor="White" Font-Names="Open Sans"  Font-Bold="true">
+         </HeaderStyle>
+            <HeaderTemplate >
 
+             
+                MORE OF THE TODAY'S TOP STORIES
+                <hr />
+                <hr id="reduce"/>
+         </HeaderTemplate>
 
-<HeaderTemplate>
-
-    MORE OF TODAY'S TOP STORIES
-    <hr /> 
-
-</HeaderTemplate>
             <HeaderStyle  Font-Names="Open Sans" Font-Bold="true"/>
            <%-- <ItemStyle  CssClass="tabless" />--%>
             
-             <ItemStyle  CssClass="tabless" />
-            
+          <ItemStyle VerticalAlign="Top" />
             <ItemTemplate>
-               
+                <div class="wrapping">  
+                      <div id="boxer" >
               
                   
                 
-                <asp:Image  CssClass="row" ID="IMAGELabel" runat="server" ImageUrl='<%# Eval("IMAGE") %>' />
+                <asp:Image  width="190px" ID="IMAGELabel" runat="server" ImageUrl='<%# Eval("IMAGE") %>' />
                 <br />
                   
 
                 
-                  <asp:Label ID="SECTION_TITLELabel"   runat="server" Text='<%# Eval("SECTION_TITLE") %>' />
-                <br />
+                  <asp:Label  fonID="SECTION_TITLELabel"  Cssclass="section_title" runat="server" Text='<%# Eval("SECTION_TITLE") %>' />
+                <br />  <br />
                   
-              
+            
                   
                
-                        <asp:Label ID="SECTION_TEXTLabel"  runat="server" Text='<%# Eval("SECTION_TEXT") %>' />
+                        <asp:Label ID="SECTION_TEXTLabel" CssClass="section_text"  runat="server" Text='<%# Eval("SECTION_TEXT") %>' />
                 <br />
                     
-                  
+                  </div>
+                    </div>
                   
                    
                
