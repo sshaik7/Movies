@@ -1,37 +1,36 @@
 ﻿body {
+    padding:10px 10px 10px 10px;
 }
 
 .wrapping {
     float: left;
     border-width: 2px;
-    /*border-style: dashed;*/
+    
 }
 
 #boxer {
-    /* basic */
+  
     background-color: #fff;
-    margin: 10px;
+    margin: 0px;
     padding: 0px;
     width: min-content;
-    text-align: left; /* border-radius */
+    text-align: left; 
 }
 
 .section_title {
     text-transform: uppercase;
     color: red;
     font-family: Open Sans;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.doubleUnderline {
-    text-decoration: underline;
-    border-bottom: 1px solid #000;
-}
 
-#reduce {
-    margin: 0.1em 0; /* FF for instance */
-    line-height: 5em; /* chrome for instance */
-}
+
 .section_text {
     font-family: Arial;
     font-weight:bold;
+}
+hr.double_line {
+    border-top: 3px double #8c8b8b;
 }
